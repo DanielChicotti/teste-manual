@@ -1,4 +1,4 @@
-# Cenário 01: Login no jogo Bleach Online
+# Cenário 01: Login no jogo SoulVerse
 
 ## Caso de Teste 01: Login com credenciais válidas
 
@@ -12,15 +12,15 @@
 
 ### Passos
 1. **DADO** que estamos na tela de login do jogo.
-2. Preenchemos o campo **Usuário** com `jogadorTeste`.
-3. Preenchemos o campo **Senha** com `senhaCorreta123`.
+2. E preenchemos o campo **Usuário** com `Conta01`.
+3. E preenchemos o campo **Senha** com `senha123`.
 4. **QUANDO** clicamos no botão **“Entrar”**.
-5. **ENTÃO** devemos ser redirecionados para o Lobby do jogo.
+5. **ENTÃO** devemos ser redirecionados para a seleção de persongem.
 
 ### Critérios de aceitação
-- O redirecionamento para o Lobby deve ocorrer corretamente.
+- O redirecionamento para a seleção de personagem deve ocorrer corretamente.
 - Nenhuma mensagem de erro deve aparecer.
-- O nome do jogador deve ser exibido no canto superior da tela.
+- A lista de personagem deve ser exibido no centro da tela.
 
 ---
 
@@ -36,15 +36,14 @@
 
 ### Passos
 1. **DADO** que estamos na tela de login.
-2. Preenchemos o campo **Usuário** com `jogadorTeste`.
-3. Preenchemos o campo **Senha** com `senhaErrada`.
+2. E preenchemos o campo **Usuário** com `jogadorTeste`.
+3. E preenchemos o campo **Senha** com `senhaErrada`.
 4. **QUANDO** clicamos em **“Entrar”**.
 5. **ENTÃO** deve ser exibida uma mensagem de erro.
 
 ### Critérios de aceitação
-- A mensagem “Usuário ou senha incorretos” deve aparecer.
+- A mensagem “You've entered an incorrect password” deve aparecer.
 - O login não deve ser efetuado.
-- O campo senha deve ser limpo para nova tentativa.
 
 ---
 
@@ -59,14 +58,13 @@
 
 ### Passos
 1. **DADO** que estamos na tela de login.
-2. Preenchemos os campos corretamente.
+2.  E preenchemos os campos corretamente.
 3. **QUANDO** clicamos em **“Entrar”**.
 4. **ENTÃO** deve aparecer um alerta de falha de conexão.
 
 ### Critérios de aceitação
 - Mensagem: “Servidor indisponível. Tente novamente mais tarde.”
 - O login não deve ser efetuado.
-- O botão “Entrar” pode ser desabilitado enquanto estiver offline.
 
 ---
 
@@ -81,10 +79,10 @@
 
 ### Passos
 1. **DADO** que estamos na tela de login.
-2. Deixamos os campos de Usuário e/ou Senha vazios.
+2. E deixamos os campos de Usuário e/ou Senha vazios.
 3. **QUANDO** clicamos em **“Entrar”**.
 4. **ENTÃO** deve ser exibida uma mensagem de validação.
 
 ### Critérios de aceitação
-- Mensagem exibida: “Preencha todos os campos”.
+- Mensagem exibida: “Mínimo de 3 letras para usuário ou senha”.
 - O login não deve ser efetuado.

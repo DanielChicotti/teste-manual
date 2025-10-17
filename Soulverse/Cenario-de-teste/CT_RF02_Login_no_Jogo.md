@@ -4,7 +4,7 @@
 
 | ID        | Descrição                                                        |
 |-----------|------------------------------------------------------------------|
-| C01-CT01  | O login será realizado com um nome de usuário e senha válidos.    |
+| C02-CT01  | O login será realizado com um nome de usuário e senha válidos.    |
 
 ### Pré-condições
 - O servidor do jogo deve estar **Online**.
@@ -28,7 +28,7 @@
 
 | ID        | Descrição                                                        |
 |-----------|------------------------------------------------------------------|
-| C01-CT02  | O login deve falhar quando a senha estiver incorreta.            |
+| C02-CT02  | O login deve falhar quando a senha estiver incorreta.            |
 
 ### Pré-condições
 - O servidor deve estar **Online**.
@@ -51,7 +51,7 @@
 
 | ID        | Descrição                                                        |
 |-----------|------------------------------------------------------------------|
-| C01-CT03  | O login deve falhar quando o servidor estiver offline.           |
+| C02-CT03  | O login deve falhar quando o servidor estiver offline.           |
 
 ### Pré-condições
 - O servidor deve estar **Offline**.
@@ -72,7 +72,7 @@
 
 | ID        | Descrição                                                        |
 |-----------|------------------------------------------------------------------|
-| C01-CT04  | O sistema deve validar se os campos estão preenchidos.          |
+| C02-CT04  | O sistema deve validar se os campos estão preenchidos.          |
 
 ### Pré-condições
 - O servidor deve estar **Online**.

@@ -94,11 +94,55 @@
 
 ---
 
-## Caso de Teste 05: Cancelar criação de personagem
+## Caso de Teste 05: Nome com caracteres especiais
 
 | ID | Descrição |
 |----|------------|
-| C04-CT05 | O usuário deve poder cancelar a criação de personagem. |
+| C04-CT05 | O sistema não deve permitir nomes de personagem com caracteres especiais válidos. |
+
+### Pré-condições
+- Usuário logado no sistema.
+
+### Passos
+1. **DADO** que estamos na tela de criação de personagem.  
+2. **E** digitamos um nome com caracteres especiais.  
+3. **E** selecionamos classe, aparência e sexo.  
+4. **QUANDO** clicamos em **“Criar”**.  
+5. **ENTÃO** é exibida uma mensagem de erro.
+
+### Critérios de aceitação
+- Nenhum personagem é criado.  
+- A mensagem de erro deve ser clara e de fácil entendimento.
+
+---
+
+## Caso de Teste 06: Limite de caracteres no nome
+
+| ID | Descrição |
+|----|------------|
+| C04-CT06 | O campo “Nome do personagem” deve respeitar limites mínimos e máximos de caracteres. |
+
+### Pré-condições
+- Usuário logado no sistema.
+
+### Passos
+1. **DADO** que estamos na tela de criação de personagem.  
+2. **QUANDO** digitamos um nome com menos que o mínimo permitido.  
+3. **OU** digitamos um nome maior que o máximo permitido.  
+4. **E** clicamos em **“Criar”**.  
+5. **ENTÃO** uma mensagem de erro deve ser exibida.
+
+### Critérios de aceitação
+- O sistema bloqueia nomes inválidos.  
+- A mensagem informa os limites corretamente.
+
+---
+
+## Caso de Teste 07: Cancelar criação de personagem
+
+| ID | Descrição |
+|----|------------|
+| C04-CT07 | O usuário deve poder cancelar a criação de personagem. |
 
 ### Pré-condições
 - Usuário logado no sistema.
@@ -111,5 +155,25 @@
 ### Critérios de aceitação
 - Nenhum personagem é criado.  
 - Retorna corretamente para a tela anterior.
+
+---
+
+## Caso de Teste 08: Clique fora dos botões
+
+| ID | Descrição |
+|----|------------|
+| C04-CT08 | O sistema não deve executar nenhuma ação ao clicar em áreas vazias da interface. |
+
+### Pré-condições
+- Sistema online.
+
+### Passos
+1. **DADO** que estamos na tela de criação de personagem.  
+2. **QUANDO** clicamos fora dos campos de texto ou botões.  
+3. **ENTÃO** nenhuma ação deve ser executada.
+
+### Critérios de aceitação
+- Nenhum evento inesperado ocorre.  
+- Interface permanece inalterada.
 
 

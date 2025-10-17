@@ -1,4 +1,4 @@
-# Cenário 02: Seleção de Personagem
+# Cenário 03: Seleção de Personagem
 
 ## Caso de Teste 01: Selecionar personagem existente
 
@@ -135,5 +135,25 @@
 ### Critérios de aceitação
 - A rolagem é suave e responsiva.  
 - Todos os personagens são exibidos corretamente.
+
+---
+
+## Caso de Teste 07: Clique fora dos botões
+
+| ID | Descrição |
+|----|------------|
+| C03-CT07 | O sistema não deve executar nenhuma ação ao clicar em áreas vazias da interface. |
+
+### Pré-condições
+- Sistema online.
+
+### Passos
+1. **DADO** que estamos na tela de seleção de personagem.  
+2. **QUANDO** clicamos fora dos campos de texto ou botões.  
+3. **ENTÃO** nenhuma ação deve ser executada.
+
+### Critérios de aceitação
+- Nenhum evento inesperado ocorre.  
+- Interface permanece inalterada.
 
 

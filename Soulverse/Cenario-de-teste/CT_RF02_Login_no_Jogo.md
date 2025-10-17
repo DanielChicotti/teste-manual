@@ -1,4 +1,4 @@
-# Cenário 01: Login no jogo SoulVerse
+# Cenário 02: Login no jogo SoulVerse
 
 ## Caso de Teste 01: Login com credenciais válidas
 
@@ -86,3 +86,24 @@
 ### Critérios de aceitação
 - Mensagem exibida: “Mínimo de 3 letras para usuário ou senha”.
 - O login não deve ser efetuado.
+
+---
+
+## Caso de Teste 05: Clique fora dos botões
+
+| ID | Descrição |
+|----|------------|
+| C02-CT05 | O sistema não deve executar nenhuma ação ao clicar em áreas vazias da interface. |
+
+### Pré-condições
+- Sistema online.
+
+### Passos
+1. **DADO** que estamos na tela de login. 
+2. **QUANDO** clicamos fora dos campos de texto ou botões.  
+3. **ENTÃO** nenhuma ação deve ser executada.
+
+### Critérios de aceitação
+- Nenhum evento inesperado ocorre.  
+- Interface permanece inalterada.
+
